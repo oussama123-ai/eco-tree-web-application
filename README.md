@@ -13,12 +13,6 @@ An API was built using Flask and was deployed on AWS. This Flask API is used to 
 Angular was used to build the frontend part of the application. MaterialUI was used for frontend part of the web application.<br/>
 
 
-<h3><b>Flask API End Points</b></h3>
-
-1. Crop Recommendation End Point: http://ecotreeappfive-env.eba-hphdscvg.ap-south-1.elasticbeanstalk.com/predict_crop
-2. Fertilizer Recommendation End Point: http://ecotreeappfive-env.eba-hphdscvg.ap-south-1.elasticbeanstalk.com/predict_fertilizer
-   <br/>
-
 <h3><b>About Data returned by Flask API</b></h3>
 
 The data is returned in JSON format:<br/>
