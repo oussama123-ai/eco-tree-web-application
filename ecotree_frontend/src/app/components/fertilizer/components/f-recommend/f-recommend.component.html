@@ -1,0 +1,84 @@
+<h3 class="text-center head1 mt-2 mb-4">Fertilizer Recommender</h3>
+<section class="text-center mt-3">
+  <form  [formGroup]="FRForm">
+    <div class="row">
+      <div class="col">
+        <mat-form-field appearance="outline">
+          <mat-label >Amount Of Nitrogen in Soil</mat-label>
+          <input  matInput formControlName="Nitrogen" placeholder="Amount Of Nitrogen in Soil" >
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field appearance="outline">
+          <mat-label >Amount of Phosphorous in Soil</mat-label>
+          <input  matInput formControlName="Phosphorous" placeholder="Amount of Phosphorous in Soil" >
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field appearance="outline">
+          <mat-label >Amount of Pottasium in Soil</mat-label>
+          <input  matInput formControlName="Potassium" placeholder="Amount of Pottasium in Soil" >
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field appearance="outline">
+          <mat-label >Temperature (in Celcius)</mat-label>
+          <input  matInput formControlName="Temparature" placeholder="Temperature (in Celcius)" >
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field appearance="outline">
+          <mat-label >Humidity (in %)</mat-label>
+          <input  matInput formControlName="Humidity" placeholder="Humidity (in %)" >
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field appearance="outline">
+          <mat-label >Moisture in Soil</mat-label>
+          <input  matInput formControlName="Moisture" placeholder="pH value of Soil" >
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field appearance="outline">
+          <mat-label>Soil Type</mat-label>
+          <input type="text"
+                 placeholder="Soil Type"
+                 aria-label="Soil Type"
+                 matInput
+                 formControlName="soil_type"
+                 [matAutocomplete]="auto1">
+          <mat-autocomplete #auto1="matAutocomplete">
+            <mat-option *ngFor="let option1 of soilTypes" [value]="option1">
+              {{option1}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+      <div class="col">
+        <mat-form-field appearance="outline">
+          <mat-label>Crop Type</mat-label>
+          <input type="text"
+                 placeholder="Crop Type"
+                 aria-label="Crop Type"
+                 matInput
+                 formControlName="crop_type"
+                 [matAutocomplete]="auto2">
+          <mat-autocomplete #auto2="matAutocomplete">
+            <mat-option *ngFor="let option2 of cropTypess" [value]="option2">
+              {{option2}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="text-center mt-4 mb-2">
+      <button mat-raised-button class="submitbtn1" (click)="predictFert()">Predict Fertilizer</button>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,76 @@
+.nav-01{
+  background: #1C1C1C;
+  height: 71px;
+}
+.ct1{
+  position: absolute;
+  top: 30px;
+  margin-left: 117px;
+  z-index: 1;
+}
+.nav-02{
+  background: white;
+  height: 81px;
+  border-radius: 14px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.nav-link{
+  font-family: Quicksand;
+}
+
+.btn1{
+  background: #209E2E;
+  border-radius: 37px;
+  border: none;
+  width: 141px;
+  height: 48px;
+  color: white;
+  font-family: Quicksand;
+}
+
+.btn2{
+  background: #209E2E;
+  border-radius: 37px;
+  border: none;
+  width: 200px;
+  height: 49px;
+  color: white;
+  font-family: Quicksand;
+}
+
+.img-bg{
+  width: 1366px;
+  height: 716px;
+}
+
+.imgcover{
+  position: absolute;
+  width: 1366px;
+  height: 718px;
+  background: rgba(39, 39, 42, 0.5);
+  top: 70px;
+}
+
+.title-txt1{
+  font-family: "Gilroy ExtraBold";
+  color: white;
+  font-size: 37px;
+}
+.title-txt2{
+  font-family: "Gilroy ExtraBold";
+  color: white;
+  font-size: 94px;
+}
+.title-txt3{
+  font-family: "Gilroy";
+  font-weight: 549;
+  color: white;
+  font-size: 21px;
+}
+
+.start_wrapper{
+  position: absolute;
+  top: 288px;
+  left: 357px;
+}

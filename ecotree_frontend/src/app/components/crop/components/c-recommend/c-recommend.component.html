@@ -1,0 +1,61 @@
+<h3 class="text-center head1 mt-2 mb-4">Crop Recommender</h3>
+<section class="text-center mt-3">
+  <form  [formGroup]="CRForm">
+  <div class="row">
+    <div class="col">
+      <mat-form-field appearance="outline">
+        <mat-label >Amount Of Nitrogen in Soil</mat-label>
+        <input  matInput formControlName="N" placeholder="Amount Of Nitrogen in Soil" >
+      </mat-form-field>
+    </div>
+    <div class="col">
+      <mat-form-field appearance="outline">
+        <mat-label >Amount of Phosphorous in Soil</mat-label>
+        <input  matInput formControlName="P" placeholder="Amount of Phosphorous in Soil" >
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <mat-form-field appearance="outline">
+        <mat-label >Amount of Pottasium in Soil</mat-label>
+        <input  matInput formControlName="K" placeholder="Amount of Pottasium in Soil" >
+      </mat-form-field>
+    </div>
+    <div class="col">
+      <mat-form-field appearance="outline">
+        <mat-label >Temperature (in Celcius)</mat-label>
+        <input  matInput formControlName="temperature" placeholder="Temperature (in Celcius)" >
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <mat-form-field appearance="outline">
+        <mat-label >Humidity (in %)</mat-label>
+        <input  matInput formControlName="humidity" placeholder="Humidity (in %)" >
+      </mat-form-field>
+    </div>
+    <div class="col">
+      <mat-form-field appearance="outline">
+        <mat-label >pH value of Soil</mat-label>
+        <input  matInput formControlName="ph" placeholder="pH value of Soil" >
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <mat-form-field appearance="outline">
+        <mat-label >Rainfall (in mm)</mat-label>
+        <input  matInput formControlName="rainfall" placeholder="Rainfall (in mm)" >
+      </mat-form-field>
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+    <div class="text-center mt-4 mb-2">
+      <button mat-raised-button class="submitbtn1" (click)="predictCrops()">Predict Crop</button>
+    </div>
+  </form>
+</section>
